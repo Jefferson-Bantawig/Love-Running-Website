@@ -170,6 +170,31 @@ hr {
    padding: 0 20px;
 }
 
+/* Times Meetup section */
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center / cover;
+/* Handles Responsivity without the need for Media Query*/
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+/* This will not wrap on screens less than 400px wide because flexbasis(width) is 200px per div box. Each div will expand to fill the available space on its row(because of flex grow)*/
+    flex-basis: 200px;
+    flex-grow: 1;
+/* Creates a grid-like appearance of the meetup divs over the background image*/
+    border: 2px solid white;
+}
+/* Override the heading color set in general Styles*/
+#times h3 {
+    color: #fafafa;
+}
+
 
 /*footer*/
 #social-networks {
